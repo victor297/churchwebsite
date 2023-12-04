@@ -153,6 +153,9 @@ export const CartcontextProvider = (props: Props) => {
         );
         setCartTotalQty(qty);
         SetCartTotalAmount(total);
+      } else {
+        setCartTotalQty(0);
+        SetCartTotalAmount(0);
       }
     };
     getTotals();
